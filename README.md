@@ -1,6 +1,8 @@
 # Credit Risk Classification — Portfolio Case Study
 
-Predicting each customer's next monthly credit class (**Bad / Standard / Good**) from longitudinal behavioural data and previous credit-score history.
+An R-based machine-learning project that predicts a customer's next monthly
+credit class (**Bad, Standard or Good**) from behavioural variables and previous
+credit-score history.
 
 ![Executive dashboard](output/credit-risk-dashboard.png)
 
@@ -15,9 +17,22 @@ Predicting each customer's next monthly credit class (**Bad / Standard / Good**)
 | First-month accuracy | 75.1% |
 | Reported 8-month cumulative accuracy | 68.2% |
 
-## Business problem
+## Why I built this project
 
-Credit-risk classification is not only about maximising accuracy. Predicting a risky customer as safer than they are can carry substantially greater downside than making the opposite error. This project therefore combines standard model performance with a cost-aware view of error direction.
+Credit-risk decisions should not be evaluated only by overall accuracy. A model
+that classifies a high-risk customer as low risk can create more downside than
+the opposite mistake. I therefore compared several classification methods and
+evaluated both predictive performance and the direction of errors.
+
+## Method
+
+1. Validate the longitudinal customer-month dataset.
+2. Remove month 1 from the one-step experiment because no previous score exists.
+3. Split train and test sets by customer, not by row.
+4. Select one test month per held-out customer.
+5. Tune each model with customer-level five-fold cross-validation.
+6. Evaluate accuracy, macro recall, macro specificity and two cost-aware metrics.
+7. Compare base models with a weighted probability ensemble.
 
 ## What I built
 
