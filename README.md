@@ -34,19 +34,6 @@ Credit-risk classification is not only about maximising accuracy. Predicting a r
 3. Accuracy declined as predictions were recursively fed into later months, demonstrating forecast-error propagation.
 4. Model selection must consider both overall accuracy and the direction of credit-risk mistakes.
 
-## Repository structure
-
-```text
-├── README.md
-├── presentation/
-│   ├── Credit_Risk_Classification_Portfolio.pdf
-│   └── Credit_Risk_Classification_Portfolio.pptx
-├── assets/
-│   └── credit-risk-dashboard.png
-└── src/
-    └── MODEL_1_0531.R
-```
-
 ## Tools
 
 R, Random Forest, XGBoost, LightGBM, Elastic Net, customer-level cross-validation, ensemble modelling and cost-aware evaluation.
