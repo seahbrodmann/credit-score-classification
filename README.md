@@ -2,7 +2,7 @@
 
 Predicting each customer's next monthly credit class (**Bad / Standard / Good**) from longitudinal behavioural data and previous credit-score history.
 
-![Executive dashboard](credit-risk-dashboard.png)
+![Executive dashboard](output/credit-risk-dashboard.png)
 
 ## Project at a glance
 
